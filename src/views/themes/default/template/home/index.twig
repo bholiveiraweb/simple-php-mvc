@@ -1,0 +1,12 @@
+{% extends "base.twig" %}
+
+{% block content %}
+    {% for user in users %}
+        <h1>Nome: {{ user.first_name }}</h1>
+        <h2>Sobrenome: {{ user.last_name }}</h2>
+        <h3>E-mail: {{ user.email }}</h3>
+        <p>Criado em: <strong>{{ user.created_at }}</strong><br>
+        Atualizado em: <strong>{{ user.updated_at }}</strong></p>
+        <hr>
+    {% endfor %}
+{% endblock %}

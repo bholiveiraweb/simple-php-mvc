@@ -1,12 +1,12 @@
 <?php
 namespace Source\Models;
 
-use CoffeeCode\DataLayer\DataLayer;
+use Source\core\Model;
 
-class User extends DataLayer
+class User extends Model
 {
     public function __construct()
     {
-        parent::__construct("users", ["name", "email"], "id", false);
+        parent::__construct("users", ["name", "email"], "id", true);
     }
 }
