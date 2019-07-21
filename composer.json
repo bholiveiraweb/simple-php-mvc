@@ -1,0 +1,29 @@
+{
+    "name": "brunobgi/mvcpattern",
+    "description": "MVC PHP Pattern",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bruno Oliveira",
+            "email": "bholiveira.web@gmail.com",
+            "role": "Developer",
+            "homepage": "https://bholiveira.com.br"
+        }
+    ],
+    "require": {
+        "coffeecode/datalayer": "^1.0"
+    },
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "autoload": {
+        "psr-4": {
+            "Source\\": "src/"
+        },
+        "files": [
+            "src/Config.php",
+            "src/Routes.php"
+        ]
+    }
+}
