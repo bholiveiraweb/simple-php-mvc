@@ -7,6 +7,6 @@ class NotFoundController extends Controller
 {
     public function index()
     {
-        $this->loadView('errors/404');
+        $this->loadView('errors/404.twig');
     }
 }
