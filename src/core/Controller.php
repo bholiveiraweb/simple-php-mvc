@@ -6,7 +6,7 @@ use Twig\Loader\FilesystemLoader;
 
 class Controller
 {
-    public function loadView($view, $data = array())
+    public function loadView(string $view, array $data = [])
     {
         $loader = new FilesystemLoader("src/views/themes/" . APP_CONFIG['theme'] . "/template");
         $twig = new Environment($loader);

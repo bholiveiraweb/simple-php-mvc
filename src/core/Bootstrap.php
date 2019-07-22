@@ -6,8 +6,7 @@ class Bootstrap
     public function run()
     {
         $url = isset($_GET['url']) ? '/' . $_GET['url'] : '/';
-
-		$url = $this->router($url);
+        $url = $this->router($url);
 		$params = array();
 
 		if (!empty($url) && $url != '/') {
@@ -45,7 +44,8 @@ class Bootstrap
 
     private function router($url)
     {
-		foreach (ROUTES as $pt => $newurl) {
+        global $routes;
+		foreach ($routes as $pt => $newurl) {
 
 			// Identifies the arguments and substitutes for regex
 			$pattern = preg_replace('(\{[a-z0-9]{1,}\})', '([a-z0-9-]{1,})', $pt);

@@ -8,9 +8,8 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $user = new User;
         $data = array(
-            "users" => $user->find()->fetch(true)
+            "users" => (new User)->find()->fetch(true)
         );
         
         $this->loadView('home/index.twig', $data);

@@ -1,4 +1,6 @@
 <?php
-define("ROUTES", [
-    '/route/{id|title}' => '/controller/action/:id|:title'
-]);
+global $routes;
+
+$routes = [
+    //'/teste/abrir/{id}' => '/home/open/:id',
+];
