@@ -5,7 +5,7 @@ class Bootstrap
 {
     public function run()
     {
-        $url = isset($_GET['url']) ? '/' . $_GET['url'] : '/';
+        $url = (isset($_GET['url']) ? '/' . $_GET['url'] : '/');
         $url = $this->router($url);
 		$params = array();
 
