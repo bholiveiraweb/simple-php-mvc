@@ -1,7 +1,7 @@
 <?php
-namespace Source\Controllers;
+namespace Controllers;
 
-use Source\Core\Controller;
+use Core\Controller;
 
 class NotFoundController extends Controller
 {

@@ -1,7 +1,7 @@
 <?php
-namespace Source\Core;
+namespace Core;
 
-class Bootstrap
+class Application
 {
     public function run()
     {
@@ -29,9 +29,9 @@ class Bootstrap
 			$currentAction = 'index';
 		}
 
-		$prefix = '\Source\Controllers\\';
+		$prefix = '\Controllers\\';
 
-		if (!file_exists('src/controllers/' . $currentController . '.php') ||
+		if (!file_exists('controllers/' . $currentController . '.php') ||
 			!method_exists($prefix . $currentController, $currentAction)) {
 			$currentController = 'NotFoundController';
 			$currentAction = 'index';

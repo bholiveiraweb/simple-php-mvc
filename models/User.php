@@ -1,7 +1,7 @@
 <?php
-namespace Source\Models;
+namespace Models;
 
-use Source\core\Model;
+use Core\Model;
 
 class User extends Model
 {

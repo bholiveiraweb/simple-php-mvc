@@ -1,5 +1,5 @@
 <?php
-use Source\Core\Bootstrap;
+use Core\Application;
 
 if (session_status() !== PHP_SESSION_ACTIVE) {
     session_start();
@@ -7,5 +7,5 @@ if (session_status() !== PHP_SESSION_ACTIVE) {
 
 require __DIR__ . '/vendor/autoload.php';
 
-$core = new Bootstrap;
-$core->run();
+$app = new Application;
+$app->run();

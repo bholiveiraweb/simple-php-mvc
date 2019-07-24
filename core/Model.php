@@ -1,5 +1,5 @@
 <?php
-namespace Source\core;
+namespace Core;
 
 use CoffeeCode\DataLayer\DataLayer;
 
