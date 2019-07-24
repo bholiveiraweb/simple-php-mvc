@@ -1,8 +1,5 @@
 <?php
-define("APP_CONFIG", [
-    "base_url" => "http://localhost/mvcpattern/",
-    "theme" => "default"
-]);
+define("BASE_URL", "http://localhost/mvcpattern/");
 
 define("DATA_LAYER_CONFIG", [
     "driver" => "mysql",

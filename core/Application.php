@@ -7,7 +7,7 @@ class Application
     {
         $url = (isset($_GET['url']) ? '/' . $_GET['url'] : '/');
         $url = $this->router($url);
-		$params = array();
+		$params = [];
 
 		if (!empty($url) && $url != '/') {
 			$url = explode('/', $url);
@@ -56,11 +56,13 @@ class Application
 				array_shift($matches);
 
 				// Get all arguments to associate
+                $itens = [];
 				if (preg_match_all('(\{[a-z0-9]{1,}\})', $pt, $m)) {
 					$itens = preg_replace('(\{|\})', '', $m[0]);
 				}
 
 				// Do the association
+                $arg = [];
 				foreach ($matches as $key => $match) {
 					$arg[$itens[$key]] = $match;
 				}
@@ -73,7 +75,6 @@ class Application
 				break;
 			}
         }
-
 		return $url;
 	}
 }
