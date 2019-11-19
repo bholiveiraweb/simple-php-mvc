@@ -1,2 +1,2 @@
-# MVC PHP PATTERN @brunobgi
+# Simple MVC @brunobgi
 A simple MVC pattern to php developer
